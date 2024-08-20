@@ -1,0 +1,2249 @@
+.path-local-levitate #page-header h1.h2 {
+    font-size: 1.5rem;
+}
+
+.path-local-levitate #page-local-levitate #page-content,
+.path-local-levitate #page-local-levitate-chakri #page-content {
+    padding-bottom: 0 !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.path-local-levitate #page-local-levitate #region-main,
+.path-local-levitate #page-local-levitate-chakri #region-main {
+    background: none;
+}
+
+.path-local-levitate #page-local-levitate-chakri #page.drawers .main-inner {
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+}
+
+.path-local-levitate #page-local-levitate-chakri .page-context-header {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.path-local-levitate .explorecourses {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-top: 20px; */
+    margin-top: 0;
+    justify-content: flex-start;
+}
+
+.path-local-levitate .explorecourses .loading {
+    left: 0;
+    position: fixed;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+}
+
+.path-local-levitate .explorecourses .loading img {
+    width: 100px;
+    height: 100px;
+}
+
+.path-local-levitate .explorecourses .loading p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.path-local-levitate .courselist_wrapper {
+    width: 100%;
+    margin-left: 15px;
+    justify-content: space-between;
+}
+
+.path-local-levitate .explorecourses .coursecard {
+    width: calc(25% - 20px);
+    min-width: calc(25% - 20px);
+    min-height: auto;
+    max-height: unset;
+    margin: 0 10px 25px 10px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 12px rgb(0 42 58 / 15%);
+    border-radius: 6px;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.path-local-levitate .explorecourses .coursecard .coursebody .coursefooter {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.path-local-levitate .explore-details-content .row {
+    max-height: 200px;
+    overflow: auto;
+}
+
+.path-local-levitate .course_explore {
+    display: flex;
+    justify-content: space-between;
+}
+
+.path-local-levitate .explorecourses .coursecard:hover {
+    box-shadow: 0 2px 12px rgb(0 42 58 / 25%);
+}
+
+.path-local-levitate .explorecourses .coursecard .courseimage {
+    /* replaced aspect-ratio: 1 / 0.6; with height due to moodle grut error */
+    height: 180px;
+    position: relative;
+}
+
+.path-local-levitate .explorecourses .coursecard .courseimage img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.path-local-levitate .explorecourses .coursecard .courseimage input[type="checkbox"] {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.path-local-levitate .explorecourses .coursecard .coursebody {
+    padding: 10px 15px;
+}
+
+.path-local-levitate .explorecourses .coursecard .coursebody .coursedescription {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 5px;
+
+}
+
+.path-local-levitate .explorecourses .coursecard .coursebody h2.coursetitle {
+    font-size: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.path-local-levitate .explorecourses .coursecard .coursebody .coursedescription p:empty {
+    display: none;
+}
+
+.path-local-levitate .explorecourses .coursecard .coursebody .coursefooter {
+    display: flex;
+    font-size: 80%;
+    background: rgba(0, 0, 0, 0.02);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.path-local-levitate .explorecourses .coursecard .coursebody .coursefooter .courselanguage {
+    flex-grow: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    height: 20px;
+    width: 50%;
+}
+
+.path-local-levitate .explorecourses .coursecard .coursebody .coursefooter .coursetime {
+    width: 50%;
+    text-align: right;
+}
+
+.path-local-levitate .explore-details {
+    border: 0;
+    box-shadow: 0 2px 12px rgb(0 0 0 / 50%);
+    border-radius: 6px;
+    padding: 20px;
+    background: white;
+}
+
+.path-local-levitate .explore-details-wrapper {
+    position: absolute;
+    width: calc(100% - 6rem - 40px);
+}
+
+.path-local-levitate .explore-details-wrapper .explore-details-pointer {
+    position: absolute;
+    margin-top: -20px;
+    width: 0;
+    border-bottom: solid 20px #c8cfd6;
+    border-right: solid 20px transparent;
+    border-left: solid 20px transparent;
+}
+
+.path-local-levitate .explore-details-wrapper .explore-details-pointer .explore-empty {
+    position: absolute;
+    top: 1px;
+    left: -20px;
+    width: 0;
+    border-bottom: solid 20px #fff;
+    border-right: solid 20px transparent;
+    border-left: solid 20px transparent;
+}
+
+.path-local-levitate .explore-details-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, .02);
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.path-local-levitate .explore-details-main {
+    margin-top: 10px;
+    display: flex;
+}
+
+.path-local-levitate .explore-details-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, .02);
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.path-local-levitate .explore-details-header {
+    float: left;
+    width: 100%;
+}
+
+.path-local-levitate .explore-details-header .pull-left {
+    flex-grow: 1;
+}
+
+.path-local-levitate .explore-create-course-button input {
+    background: transparent;
+    border: 0;
+    color: white;
+}
+
+.path-local-levitate .explore-details-content .row {
+    display: flex;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    max-height: 400px !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.path-local-levitate .explore-details-main {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.path-local-levitate .explore-details-content .explore-details-main {
+    display: flex;
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.path-local-levitate .explore-details-content .explore-details-main .col-md-4 {
+    width: 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.path-local-levitate .explore-details-img {
+    height: 100%;
+}
+
+.path-local-levitate .explore-details-img .explore-thumbnail-img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 250px;
+}
+
+.path-local-levitate #course_selection .text-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+
+.path-local-levitate .explorecourses + .text-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.path-local-levitate #course_selection .text-container input[type="submit"],
+.path-local-levitate .explorecourses + .text-container input[type="submit"] {
+    color: #fff;
+    font-weight: 400;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: .9375rem;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+    text-align: center;
+    vertical-align: middle;
+    transition:
+        color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+}
+
+.path-local-levitate #course_selection .text-container input[type="submit"]:hover,
+.path-local-levitate .explorecourses + .text-container input[type="submit"]:hover {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    text-decoration: none;
+}
+
+
+.path-local-levitate .explore-details-close {
+    background: var(--primary);
+    width: 25px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 5px;
+    border-radius: 6px;
+}
+
+.path-local-levitate .explore-details-close:hover {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    text-decoration: none;
+}
+
+.path-local-levitate #fitem_id_coursefullname {
+    display: none;
+}
+
+.path-local-levitate #fitem_id_courseshortname {
+    display: none;
+}
+
+.path-local-levitate select {
+    border: none;
+    /* padding: 10px 20px; */
+    border-radius: 5px;
+}
+
+.path-local-levitate select:focus {
+    outline: none;
+}
+
+.path-local-levitate .hl-FiltersOptions {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    background: white;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 2px 4px 14px rgba(46, 64, 79, 0.25);
+    right: 0;
+    left: 0;
+}
+
+.path-local-levitate .hl-values {
+    display: block !important; /* stylelint-disable-line declaration-no-important */
+    margin: 15px 0 0 15px !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.path-local-levitate .filters-summary {
+    position: relative;
+}
+
+.path-local-levitate .hl-filters-wrapper .hl-base {
+    box-shadow: 2px 4px 14px rgba(46, 64, 79, 0.06);
+    padding: 20px;
+    border-radius: 6px;
+}
+
+.path-local-levitate .nocourse {
+    width: 100%;
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    border: solid 1px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+
+.path-local-levitate .nocourse > h4 {
+    text-align: center;
+    width: 100%;
+    margin: 30px;
+    font-weight: 500;
+}
+
+.path-local-levitate .noresponse {
+    width: 100%;
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+    border: solid 1px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+}
+
+.path-local-levitate .noresponse > h4 {
+    text-align: center;
+    width: 100%;
+    margin: 30px;
+    font-weight: 500;
+}
+
+.path-local-levitate .filter-summary-selectedFilterContainer form#course_selection {
+    position: relative;
+}
+
+.path-local-levitate .filter-summary-selectedFilterContainer form#course_selection .explore-details-wrapper {
+    width: calc(100% - 1rem);
+    margin: 0 .5rem;
+}
+
+.path-local-levitate .filter-summary-selectedFilterContainer form#course_selection .explore-details-content .explore-details-main {
+    display: block;
+    width: 100%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+
+.path-local-levitate .hl-filters-wrapper {
+    padding: 15px;
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+    border-radius: 0.5rem;
+    max-width: 345px;
+    min-height: calc(100vh - 250px);
+}
+
+.path-local-levitate .hl-filters-wrapper ul {
+    list-style: none;
+}
+
+.path-local-levitate .hl-filters-wrapper .explorecourses {
+    justify-content: space-between;
+}
+
+.path-local-levitate .hl-filters-wrapper .explorecourses .coursecard {
+    width: calc(25% - 20px);
+    min-width: calc(25% - 20px);
+    margin: 0 0 25px 0;
+    border: solid 1px rgba(0, 0, 0, .15);
+}
+
+.path-local-levitate .hl-base {
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: space-between;
+    -webkit-box-pack: start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: stretch;
+    -webkit-box-direction: normal;
+}
+
+.path-local-levitate .horizontal-filters-base {
+    width: 100%;
+    display: block;
+    user-select: none;
+    border-bottom: 1px solid #eaeaec;
+    padding-bottom: 15px;
+    padding-top: 23px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.path-local-levitate .horizontal-filters-sortContainer {
+    display: inline-block;
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-top: -7px;
+    position: relative;
+    top: 5px;
+}
+
+.path-local-levitate .hl-filters {
+    font-size: 14px;
+    display: block;
+    color: var(--gray-dark);
+    margin: 0;
+    padding-left: 0;
+}
+
+.path-local-levitate .hl-filters li {
+    margin: 0 0 15px 0;
+    cursor: pointer;
+}
+
+.path-local-levitate .hl-filters label.hl-filter {
+    position: relative;
+    padding: 3px 10px 10px 10px;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, .9);
+    border: solid 1px rgba(0, 0, 0, .25);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .075);
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.path-local-levitate .hl-filters label.hl-filter:hover {
+    background-color: #f0f0f0;
+}
+
+.path-local-levitate .hl-filters label.hl-filter.hl-selected,
+.path-local-levitate .hl-filters label.hl-filter.hl-selected:hover {
+    background-color: #ddd;
+}
+
+.path-local-levitate .hl-filters label.hl-filter > input[type="radio"] {
+    display: none;
+}
+
+.path-local-levitate .hl-filters label.hl-filter .hl-title {
+    vertical-align: middle;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    display: inline-block;
+    width: calc(100% - 20px);
+}
+
+.path-local-levitate .hl-filters label.hl-filter .icon-arrow-down {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    font-size: 11px;
+    padding: 4px 0 4px 2px;
+    transition: all 0.2s ease-out;
+    font-weight: bold;
+}
+
+.path-local-levitate .hl-filters label.hl-filter.hl-selected .icon-arrow-down {
+    transform: rotate(-180deg);
+    padding: 2px 0 2px 2px;
+}
+
+.path-local-levitate .hl-FiltersOptionCtn {
+    padding-left: 16px;
+    padding-bottom: 0;
+    display: none;
+}
+
+.path-local-levitate .hl-FiltersOptions {
+    display: none;
+
+}
+
+.path-local-levitate .hl-ShowContainer {
+    display: block;
+}
+
+.path-local-levitate .hl-values {
+    font-size: 14px;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    text-transform: capitalize;
+    padding: 10px;
+    margin: 0 !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.path-local-levitate .hl-values li {
+    padding: 10px 0;
+    margin: 0;
+    min-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px #ccc dashed;
+}
+
+.path-local-levitate .hl-values li:last-child {
+    border-bottom: 0;
+}
+
+.path-local-levitate .hl-values li:hover {
+    background-color: rgba(0, 0, 0, .025);
+}
+
+.path-local-levitate .hl-base label {
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 0;
+    width: 100%;
+}
+
+.path-local-levitate .common-customCheckbox {
+    position: relative;
+    cursor: pointer;
+}
+
+.path-local-levitate .common-customCheckbox input {
+    margin: 0;
+    visibility: hidden;
+}
+
+.path-local-levitate .common-customCheckbox input[type="checkbox"] + span {
+    color: inherit;
+    font-size: 14px;
+    position: relative;
+    top: -1px;
+    padding-left: 10px;
+}
+
+.path-local-levitate .common-checkboxIndicator {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #c3c2c9;
+    background: #fff;
+    border-radius: 2px;
+}
+
+.path-local-levitate .common-checkboxIndicator:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    width: 10px;
+    height: 6px;
+    border-color: #fff;
+    border-style: none none solid solid;
+    border-width: 2px;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(-45deg);
+}
+
+.path-local-levitate .common-customCheckbox input:checked ~ .common-checkboxIndicator {
+    border: none;
+    background-color: var(--primary);
+}
+
+.path-local-levitate .common-customCheckbox input:checked ~ .common-checkboxIndicator:after {
+    display: block;
+}
+
+/* --- checkbox filter selected --- */
+
+/* --- span filter selected --- */
+
+.path-local-levitate .filters-summary {
+    margin-top: 30px;
+}
+
+.path-local-levitate .filter-summary-filterList {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin-bottom: 0;
+    padding: 0;
+    /*background-color: rgba(255,255,255,.5);
+    border-radius: 10px;*/
+}
+
+.path-local-levitate .filter-summary-filterList li {
+    margin: 0 8px 6px 0;
+    list-style: none;
+}
+
+.path-local-levitate .filter-summary-filter {
+    position: relative;
+    background-color: #fff;
+    text-transform: capitalize;
+    color: var(--gray-dark);
+    cursor: default;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 30px 5px 10px;
+    /*transition: all 0.2s ease-out;*/
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15);
+}
+
+.path-local-levitate .filter-summary-removeFilter {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    width: 16px;
+    height: 12px;
+    z-index: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.path-local-levitate .filter-summary-filter input {
+    display: none;
+}
+
+.path-local-levitate .sprites-remove {
+    width: 14px;
+    height: 14px;
+    background-position: -1083px 0;
+}
+
+.path-local-levitate .filter-summary-removeIcon {
+    vertical-align: middle;
+    opacity: 0.7;
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.path-local-levitate .filter-summary-filterList input[type="checkbox"] + span {
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    top: 3px;
+    padding-right: 0;
+    color: red;
+}
+
+/* --- span filter selected --- */
+
+/* --- range-slider filter selected --- */
+
+.path-local-levitate .slider-wrapper {
+    position: relative;
+    width: 315px;
+    height: 90px;
+}
+
+.path-local-levitate .slider-wrapper > p.label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.path-local-levitate .slider-wrapper .error {
+    position: absolute;
+    bottom: -25px;
+    color: var(--red);
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.path-local-levitate #slider-distance .box-minmax select {
+    font-size: 14px;
+    padding: 3px 4px;
+    border: 1px solid #d4d5d9;
+    border-radius: 4px;
+    width: 80px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .075);
+}
+
+.path-local-levitate #slider-distance .box-minmax span {
+    color: #aaa;
+}
+
+.path-local-levitate #slider-distance .box-minmax span:last-child {
+    position: relative;
+    right: -12px;
+}
+
+
+.path-local-levitate .range-slider-wrapper {
+    position: relative;
+}
+
+.path-local-levitate .hl-filters-wrapper .hl-base {
+    background: none;
+    box-shadow: none;
+    padding: 0 0 15px 0;
+    border-radius: 8px 8px 0 0;
+    display: block;
+    width: 100%;
+}
+
+.path-local-levitate .range-slider-wrapper .lable-title {
+    margin: 0 0 10px 0;
+}
+
+.path-local-levitate .slider {
+    width: calc(100% - 14px);
+    position: relative;
+    height: 40px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.path-local-levitate .slider > div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+}
+
+.path-local-levitate .slider > div:first-child {
+    width: calc(100% - 10px);
+    left: 15px;
+}
+
+.path-local-levitate .slider > div > .inverse-left {
+    position: absolute;
+    left: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ccc;
+    margin: 0;
+    width: 100%;
+}
+
+.path-local-levitate .slider > div > .inverse-right {
+    position: absolute;
+    right: 0;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #ccc;
+    margin: 0;
+}
+
+.path-local-levitate .slider > div > .range {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    border-radius: 14px;
+    background-color: var(--primary);
+}
+
+.path-local-levitate .slider > div > .thumb {
+    position: absolute;
+    top: -7.5px;
+    z-index: 2;
+    height: 20px;
+    width: 20px;
+    text-align: left;
+    margin-left: -15px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    outline: none;
+}
+
+.path-local-levitate .slider > input[type="range"] {
+    position: absolute;
+    pointer-events: none;
+    -webkit-appearance: none;
+    z-index: 3;
+    height: 5px;
+    top: 0;
+    width: calc(100% + 10px);
+    opacity: 0;
+}
+
+.path-local-levitate div.slider > input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: transparent;
+    border: transparent;
+}
+
+.path-local-levitate div.slider > input[type="range"]:focus {
+    outline: none;
+}
+
+.path-local-levitate div.slider > input[type="range"]::-webkit-slider-thumb {
+    pointer-events: all;
+    width: 28px;
+    height: 28px;
+    border-radius: 1px;
+    border: 0 none;
+    -webkit-appearance: none;
+}
+
+/* --- range-slider filter selected --- */
+
+.path-local-levitate .box-minmax {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.path-local-levitate .sign {
+    opacity: 0;
+}
+
+/* --- Course Search --- */
+
+.path-local-levitate .course-search {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.path-local-levitate .course-search .searchTerm {
+    width: 100%;
+    border: 1px solid var(--primary);
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: rgba(0, 0, 0, 1);
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.path-local-levitate .course-search .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* --- Course Search end --- */
+
+.path-local-levitate .clearfilter {
+    display: none;
+}
+
+.path-local-levitate .addBtnClear {
+    display: inline-flex;
+    background-color: #fff;
+    border: solid 1px rgba(0, 0, 0, .25);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .075);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    justify-content: flex-end;
+}
+
+
+.path-local-levitate.lang-ar .dashboard .main-region .total-statistics .total-users .stats,
+.path-local-levitate.lang-ar .dashboard .main-region .total-statistics .total-minutes .stats,
+.path-local-levitate.lang-ar .dashboard .main-region .total-statistics .total-courses .stats {
+    margin-left: 25px;
+}
+
+.path-local-levitate.lang-ar .right-region .detail-item .details p {
+    margin: 7px 0 7px 20px;
+}
+
+.path-local-levitate.lang-ar .right-region .blocks .heads {
+    text-align: left;
+}
+
+.path-local-levitate.lang-ar .dataTables_wrapper .dataTables_paginate {
+    direction: rtl;
+}
+
+.path-local-levitate.lang-ar .course-statistics .heads select {
+    background-position: right 15px center;
+}
+
+.path-local-levitate.lang-ar .popular-courses .legends .ttl-enrolls {
+    margin-right: 30px;
+}
+
+.path-local-levitate.lang-ar .popular-courses .legends .ttl-enrolls:before,
+.path-local-levitate.lang-ar .popular-courses .legends .ttl-completes:before {
+    right: -15px;
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .path-local-levitate .explorecourses .coursecard {
+        width: calc(33.33% - 20px);
+        min-width: calc(33.33% - 20px);
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .path-local-levitate .explorecourses .coursecard {
+        width: calc(50% - 20px);
+        min-width: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .path-local-levitate .explorecourses .coursecard {
+        width: calc(100% - 20px);
+        min-width: calc(100% - 20px);
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .path-local-levitate .course_explore {
+        flex-direction: column;
+    }
+
+    .path-local-levitate .explorecourses .coursecard {
+        width: calc(50% - 20px);
+        min-width: calc(50% - 20px);
+    }
+
+    .path-local-levitate .hl-filters-wrapper {
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .path-local-levitate .courselist_wrapper {
+        margin-left: 0;
+    }
+
+    .path-local-levitate .slider-wrapper {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .path-local-levitate .explorecourses .coursecard {
+        width: calc(100% - 20px);
+        min-width: calc(100% - 20px);
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .path-local-levitate .explore-details-content .row {
+        flex-direction: row;
+    }
+
+    .path-local-levitate form#course_selection .explore-details-content .explore-details-main,
+    .path-local-levitate form#course_selection .explore-details-content .explore-details-main + .col-md-4 {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .path-local-levitate .explore-details-main {
+        max-height: unset;
+    }
+
+    .path-local-levitate .filter-summary-selectedFilterContainer form
+    #course_selection .explore-details-content .explore-details-main {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.path-local-levitate .graphs-container {
+    position: relative;
+}
+
+.path-local-levitate .tooltip {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0.1px 4px 30px 0.1px rgba(81, 45, 168, 0.10);
+}
+
+.path-local-levitate span.chevron-down.fa.fa-chevron-down {
+    width: 10px;
+    height: 10px;
+    font-size: 14px;
+}
+
+.path-local-levitate span.chevron-down.fa.fa-chevron-down:before {
+    transform: rotate(90deg);
+    top: 0;
+    width: 10px;
+    height: 15px;
+}
+
+.path-local-levitate #course_selection .course_count_div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    border-radius: 10px;
+    color: #7d7d7d;
+}
+
+.path-local-levitate #course_selection .text-container {
+    display: flex;
+    margin: 20px 10px;
+}
+
+.path-local-levitate #course_selection .course_submit {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.path-local-levitate #course_selection .course_count_div p {
+    margin-bottom: 0 !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.path-local-levitate .pull-right {
+    float: right;
+}
+
+.path-local-levitate .coursebody.ar,
+.path-local-levitate.dir-rtl .coursebody.ar {
+    direction: rtl;
+    text-align: right;
+}
+
+.path-local-levitate .coursebody.en,
+.path-local-levitate.dir-rtl .coursebody.en {
+    direction: ltr;
+    text-align: left;
+}
+
+.path-local-levitate.dir-rtl .explorecourses .coursecard .coursebody.ar .coursefooter .coursetime,
+.path-local-levitate .explorecourses .coursecard .coursebody.ar .coursefooter .coursetime {
+    text-align: left;
+}
+
+.path-local-levitate.dir-rtl .explorecourses .coursecard .coursebody.en .coursefooter .coursetime,
+.path-local-levitate .explorecourses .coursecard .coursebody.en .coursefooter .coursetime {
+    text-align: right;
+}
+
+.path-local-levitate .explore-details.ar,
+.path-local-levitate.dir-rtl .explore-details.ar {
+    direction: rtl;
+    text-align: right;
+}
+
+.path-local-levitate .explore-details.en,
+.path-local-levitate.dir-rtl .explore-details.en {
+    direction: ltr;
+    text-align: left;
+}
+
+.path-local-levitate .explore-details.ar .pull-right,
+.path-local-levitate.dir-rtl .explore-details.ar .pull-right {
+    float: left;
+}
+
+.path-local-levitate .explore-details.en .pull-right,
+.path-local-levitate.dir-rtl .explore-details.en .pull-right {
+    float: right;
+}
+
+.path-local-levitate.dir-rtl .explore-details.ar,
+.path-local-levitate.dir-rtl .explore-details.en,
+.path-local-levitate.dir-rtl .explorecourses .coursecard {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .15) !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.path-local-levitate.dir-rtl .common-checkboxIndicator:after {
+    border-style: none none solid solid !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.path-local-levitate.dir-rtl #datatable_wrapper {
+    direction: ltr;
+}
+
+.path-local-levitate .company-logo img {
+    height: 100%;
+    width: auto;
+}
+
+#page-admin-setting-locallevitategettoken a[data-passwordunmask="edit"] {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 7px 5px 7px 15px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+#page-admin-setting-locallevitategettoken a[data-passwordunmask="edit"]:hover {
+    text-decoration: none;
+}
+
+#page-admin-setting-locallevitategettoken [data-passwordunmaskid="id_s_local_levitate_secret"] a:focus {
+    outline: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#page-admin-setting-locallevitategettoken #id_s_local_levitate_secret {
+    margin-top: -6px;
+    margin-right: 10px;
+    width: 249px;
+}
+
+#page-admin-setting-locallevitategettoken #id_s_local_levitate_secret.form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+#page-admin-setting-locallevitategettoken #admin-secret .form-password {
+    margin-top: 10px;
+}
+
+#page-admin-setting-locallevitategettoken .form-description a {
+    display: block;
+}
+
+/* Styles from CSS/styes.css */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2]]) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2]]) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2]]) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2]]) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2]]) format('woff2');
+    unicode-range:
+        U+0102-0103,
+        U+0110-0111,
+        U+0128-0129,
+        U+0168-0169,
+        U+01A0-01A1,
+        U+01AF-01B0,
+        U+0300-0301,
+        U+0303-0304,
+        U+0308-0309,
+        U+0323,
+        U+0329,
+        U+1EA0-1EF9,
+        U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2]]) format('woff2');
+    unicode-range:
+        U+0100-02AF,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+1E00-1E9F,
+        U+1EF2-1EFF,
+        U+2020,
+        U+20A0-20AB,
+        U+20AD-20CF,
+        U+2113,
+        U+2C60-2C7F,
+        U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmSU5fBBc4.woff2]]) format('woff2');
+    unicode-range:
+        U+0000-00FF,
+        U+0131,
+        U+0152-0153,
+        U+02BB-02BC,
+        U+02C6,
+        U+02DA,
+        U+02DC,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+2000-206F,
+        U+2074,
+        U+20AC,
+        U+2122,
+        U+2191,
+        U+2193,
+        U+2212,
+        U+2215,
+        U+FEFF,
+        U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOmCnqEu92Fr1Mu72xKOzY.woff2]]) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOmCnqEu92Fr1Mu5mxKOzY.woff2]]) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOmCnqEu92Fr1Mu7mxKOzY.woff2]]) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOmCnqEu92Fr1Mu4WxKOzY.woff2]]) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOmCnqEu92Fr1Mu7WxKOzY.woff2]]) format('woff2');
+    unicode-range:
+        U+0102-0103,
+        U+0110-0111,
+        U+0128-0129,
+        U+0168-0169,
+        U+01A0-01A1,
+        U+01AF-01B0,
+        U+0300-0301,
+        U+0303-0304,
+        U+0308-0309,
+        U+0323,
+        U+0329,
+        U+1EA0-1EF9,
+        U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOmCnqEu92Fr1Mu7GxKOzY.woff2]]) format('woff2');
+    unicode-range:
+        U+0100-02AF,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+1E00-1E9F,
+        U+1EF2-1EFF,
+        U+2020,
+        U+20A0-20AB,
+        U+20AD-20CF,
+        U+2113,
+        U+2C60-2C7F,
+        U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOmCnqEu92Fr1Mu4mxK.woff2]]) format('woff2');
+    unicode-range:
+        U+0000-00FF,
+        U+0131,
+        U+0152-0153,
+        U+02BB-02BC,
+        U+02C6,
+        U+02DA,
+        U+02DC,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+2000-206F,
+        U+2074,
+        U+20AC,
+        U+2122,
+        U+2191,
+        U+2193,
+        U+2212,
+        U+2215,
+        U+FEFF,
+        U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2]]) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2]]) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2]]) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2]]) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2]]) format('woff2');
+    unicode-range:
+        U+0102-0103,
+        U+0110-0111,
+        U+0128-0129,
+        U+0168-0169,
+        U+01A0-01A1,
+        U+01AF-01B0,
+        U+0300-0301,
+        U+0303-0304,
+        U+0308-0309,
+        U+0323,
+        U+0329,
+        U+1EA0-1EF9,
+        U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2]]) format('woff2');
+    unicode-range:
+        U+0100-02AF,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+1E00-1E9F,
+        U+1EF2-1EFF,
+        U+2020,
+        U+20A0-20AB,
+        U+20AD-20CF,
+        U+2113,
+        U+2C60-2C7F,
+        U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url([[font:local_levitate|KFOlCnqEu92Fr1MmEU9fBBc4.woff2]]) format('woff2');
+    unicode-range:
+        U+0000-00FF,
+        U+0131,
+        U+0152-0153,
+        U+02BB-02BC,
+        U+02C6,
+        U+02DA,
+        U+02DC,
+        U+0304,
+        U+0308,
+        U+0329,
+        U+2000-206F,
+        U+2074,
+        U+20AC,
+        U+2122,
+        U+2191,
+        U+2193,
+        U+2212,
+        U+2215,
+        U+FEFF,
+        U+FFFD;
+}
+
+.path-local-levitate.body {
+    font-family: 'Roboto';
+    background: rgba(64, 80, 231, 0.01);
+    margin: 0;
+    padding: 0;
+}
+
+.path-local-levitate .dashboard {
+    max-width: 1440px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    display: flex;
+    gap: 30px;
+}
+
+.path-local-levitate .dashboard .main-region {
+    width: calc(100% - 400px);
+}
+
+.path-local-levitate .dashboard .main-region .total-statistics {
+    display: flex;
+    gap: 35px;
+}
+
+.path-local-levitate .dashboard .main-region .total-statistics .total-users,
+.path-local-levitate .dashboard .main-region .total-statistics .total-minutes,
+.path-local-levitate .dashboard .main-region .total-statistics .total-courses {
+    display: flex;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 30px 0px rgba(81, 45, 168, 0.10);
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    flex-grow: 1;
+}
+
+.path-local-levitate .dashboard .main-region .total-statistics .total-users:hover,
+.path-local-levitate .dashboard .main-region .total-statistics .total-minutes:hover,
+.path-local-levitate .dashboard .main-region .total-statistics .total-courses:hover {
+    background-color: #4050e7;
+    transition: all 0.5s ease;
+}
+
+.path-local-levitate .dashboard .main-region .total-statistics .total-users .stats,
+.path-local-levitate .dashboard .main-region .total-statistics .total-minutes .stats,
+.path-local-levitate .dashboard .main-region .total-statistics .total-courses .stats {
+    margin-left: 25px;
+}
+
+.path-local-levitate .dashboard .main-region .total-statistics .total-users .stats .lead,
+.path-local-levitate .dashboard .main-region .total-statistics .total-minutes .stats .lead,
+.path-local-levitate .dashboard .main-region .total-statistics .total-courses .stats .lead {
+    min-width: 100%;
+    color: #231f20;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.path-local-levitate .dashboard .main-region .total-statistics .total-users .stats .nums,
+.path-local-levitate .dashboard .main-region .total-statistics .total-minutes .stats .nums,
+.path-local-levitate .dashboard .main-region .total-statistics .total-courses .stats .nums {
+    color: #000;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.path-local-levitate .dashboard .main-region .total-statistics .total-users:hover .nums,
+.path-local-levitate .dashboard .main-region .total-statistics .total-minutes:hover .nums,
+.path-local-levitate .dashboard .main-region .total-statistics .total-courses:hover .nums,
+.path-local-levitate .dashboard .main-region .total-statistics .total-users:hover .lead,
+.path-local-levitate .dashboard .main-region .total-statistics .total-minutes:hover .lead,
+.path-local-levitate .dashboard .main-region .total-statistics .total-courses:hover .lead {
+    color: #fff;
+}
+
+.path-local-levitate .course-statistics {
+    border-radius: 15px;
+    background: #f7f8ff;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.path-local-levitate .course-statistics .heads {
+    display: flex;
+}
+
+.path-local-levitate .course-statistics .heads h2 {
+    margin-top: 0;
+    flex-grow: 1;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.path-local-levitate .course-statistics .heads select {
+    width: 125px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url([[pix:local_levitate|chevron-down]]);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    box-shadow: 0px 1px 10px 0px rgba(81, 45, 168, 0.01);
+}
+
+.path-local-levitate .right-region {
+    min-width: 380px;
+}
+
+.path-local-levitate .right-region .blocks {
+    border-radius: 15px;
+    background: #f7f8ff;
+    width: 380px;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.path-local-levitate .right-region .blocks.company-logo {
+    height: 210px;
+    display: flex;
+}
+
+.path-local-levitate .right-region .blocks .heads {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.path-local-levitate .right-region .blocks .heads h2 {
+    flex-grow: 1;
+    font-weight: 500;
+    margin: 0;
+    font-size: 30px;
+}
+
+.path-local-levitate .right-region .blocks .heads .chev-down {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.path-local-levitate .right-region .blocks .heads .chev-down img {
+    width: 15px;
+    height: 8px;
+}
+
+.path-local-levitate .right-region .detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    min-height: 80px;
+}
+
+.path-local-levitate .right-region .detail-item .detail-item-icon {
+    width: 56px;
+    height: 56px;
+    box-shadow: 0px 0px 20px 0px #512da80d;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.path-local-levitate .right-region .detail-item .details p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    margin: 7px 0 7px 20px;
+}
+
+.path-local-levitate .right-region .detail-item .details .lead {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+@keyframes local_levitate_load {
+    0% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.path-local-levitate .progress {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    background: none;
+    box-shadow: none;
+}
+
+.path-local-levitate .progress .bar {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #4050e7;
+    margin: 20px auto;
+    font-size: 28px;
+    font-weight: 500;
+    box-shadow: 0px 4px 30px 0px rgba(81, 45, 168, 0.10);
+    border-radius: 50%;
+}
+
+.path-local-levitate .progress .bar:after {
+    content: attr(data-percent);
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.path-local-levitate .progress svg {
+    width: 200px;
+    height: 200px;
+}
+
+.path-local-levitate .progress svg:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-90deg);
+}
+
+.path-local-levitate .progress svg:nth-child(2) path {
+    fill: none;
+    stroke-width: 10;
+    stroke-dasharray: 629;
+    stroke: #d9dcfa;
+    animation: local_levitate_load 2s;
+}
+
+.path-local-levitate .seat-utilization {
+    text-align: center;
+}
+
+.path-local-levitate .right-region .seat-utilization .heads {
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+
+.path-local-levitate .right-region .utilization {
+    display: flex;
+    text-align: left;
+    gap: 15px;
+}
+
+.path-local-levitate .right-region .utilization .total-bought,
+.path-local-levitate .right-region .utilization .total-used {
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 4px 30px 0px rgba(81, 45, 168, 0.10);
+    width: calc(50% - 15px);
+    padding: 15px;
+}
+
+.path-local-levitate .right-region .utilization .total-used {
+    background: #4050e7;
+    color: white;
+}
+
+.path-local-levitate .right-region .utilization .lead {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.path-local-levitate .right-region .utilization .nums {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    margin: 16px 0 0 0;
+}
+
+
+.path-local-levitate .total-statistics .graph-icon {
+    min-width: 64px;
+    min-height: 51px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 0.5s ease;
+}
+
+.path-local-levitate .total-statistics .total-users .graph-icon {
+    background-image: url([[pix:local_levitate|graph]]);
+}
+
+.path-local-levitate .total-statistics .total-minutes .graph-icon {
+    background-image: url([[pix:local_levitate|graph1]]);
+}
+
+.path-local-levitate .total-statistics .total-courses .graph-icon {
+    background-image: url([[pix:local_levitate|graph2]]);
+}
+
+.path-local-levitate .total-statistics .total-users:hover .graph-icon {
+    background-image: url([[pix:local_levitate|graph-hover]]);
+}
+
+.path-local-levitate .total-statistics .total-minutes:hover .graph-icon {
+    background-image: url([[pix:local_levitate|graph1-hover]]);
+}
+
+.path-local-levitate .total-statistics .total-courses:hover .graph-icon {
+    background-image: url([[pix:local_levitate|graph2-hover]]);
+}
+
+.path-local-levitate .popular-courses .legends {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+.path-local-levitate .popular-courses .legends .ttl-enrolls,
+.path-local-levitate .popular-courses .legends .ttl-completes {
+    position: relative;
+}
+
+.path-local-levitate .popular-courses .legends .ttl-enrolls {
+    margin-right: 30px;
+}
+
+.path-local-levitate .popular-courses .legends .ttl-enrolls:before,
+.path-local-levitate .popular-courses .legends .ttl-completes:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    background: #4050e7;
+    border-radius: 50%;
+}
+
+.path-local-levitate .popular-courses .legends .ttl-completes:before {
+    background: #fbc02d;
+}
+
+.path-local-levitate .popular-table table {
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.path-local-levitate .popular-table table tr th,
+.path-local-levitate .popular-table table tr td {
+    border-bottom: 1px solid #512da80d;
+}
+
+.path-local-levitate .popular-table table tr th {
+    padding-bottom: 20px;
+}
+
+.path-local-levitate .popular-table table th {
+    font-weight: 500;
+}
+
+.path-local-levitate .popular-table table th:nth-child(1) {
+    width: 20px;
+}
+
+.path-local-levitate .popular-table table th:nth-child(3) {
+    width: 130px;
+    text-align: right;
+}
+
+.path-local-levitate .popular-table table th:nth-child(4) {
+    width: 170px;
+    text-align: right;
+}
+
+.path-local-levitate .popular-table table th:nth-child(5) {
+    width: 50px;
+}
+
+.path-local-levitate .popular-table table td:nth-child(2),
+.path-local-levitate .popular-table table td:nth-child(3),
+.path-local-levitate .popular-table table td:nth-child(4) {
+    text-align: center;
+}
+
+.path-local-levitate .popular-table + .pagenation {
+    text-align: right;
+}
+
+.path-local-levitate .popular-table + .pagenation ul {
+    list-style: none;
+}
+
+.path-local-levitate .popular-table + .pagenation ul li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.path-local-levitate .popular-table + .pagenation ul li a {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #666;
+    background: #fff;
+    cursor: pointer;
+}
+
+.path-local-levitate .popular-table + .pagenation ul li a.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.path-local-levitate .popular-table + .pagenation ul li a:hover,
+.path-local-levitate .popular-table + .pagenation ul li a.active {
+    border: 1px solid #4050e7;
+    color: #4050e7;
+}
+
+.path-local-levitate #enroll_graph,
+.path-local-levitate #course_graph {
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 1330px) {
+    .path-local-levitate .dashboard .main-region .total-statistics {
+        flex-wrap: wrap;
+    }
+    .path-local-levitate .dashboard .main-region .total-statistics .total-users,
+    .path-local-levitate .dashboard .main-region .total-statistics .total-minutes,
+    .path-local-levitate .dashboard .main-region .total-statistics .total-courses {
+        width: calc(50% - 50px);
+    }
+}
+
+/*added mobile 04032024*/
+
+@media screen and (max-width: 600px) {
+    .path-local-levitate .dashboard .main-region .total-statistics .total-users,
+    .path-local-levitate .dashboard .main-region .total-statistics .total-minutes,
+    .path-local-levitate .dashboard .main-region .total-statistics .total-courses {
+        width: 100%;
+    }
+    .path-local-levitate .dashboard .main-region .total-statistics {
+        flex-direction: column;
+    }
+    .path-local-levitate .dataTables_wrapper .dataTables_paginate .paginate_button {
+        margin: 2px;
+    }
+    .path-local-levitate .dashboard {
+        padding: 30px 5px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .path-local-levitate .course-statistics .heads h2 {
+        font-size: 22px;
+    }
+}
+
+/*added mobile 04032024*/
+
+.path-local-levitate .progress svg,
+.path-local-levitate .progress svg:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    top: -4px;
+    left: -4px;
+    position: absolute;
+}
+
+.path-local-levitate .progress .bar {
+    width: 192px;
+    height: 192px;
+}
+
+.path-local-levitate .dataTables_wrapper {
+    overflow-x: auto;
+}
+
+.path-local-levitate .open_graph .icon img {
+    display: none;
+}
+
+.path-local-levitate td.open_graph .icon {
+    background-image: url([[pix:local_levitate|graphIcon]]);
+    width: 72px;
+    height: 72px;
+    background-size: contain;
+    display: block;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.path-local-levitate td.open_graph.disable {
+    position: relative;
+    cursor: default;
+}
+
+.path-local-levitate td.open_graph.disable:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+
+.path-local-levitate td.open_graph,
+.path-local-levitate th.open_graph {
+    text-align: center;
+    width: 50px !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.path-local-levitate .popular-table table.dataTable td:nth-child(1),
+.path-local-levitate .popular-table table.dataTable th:nth-child(1) {
+    width: auto !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.path-local-levitate .popular-table table tr th,
+.popular-table table tr td {
+    border-bottom: 1px solid #512da80d !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.path-local-levitate .popular-table table.dataTable tr.odd,
+.path-local-levitate .popular-table table.dataTable tr.even,
+.path-local-levitate .popular-table table.dataTable tr td.sorting_1 {
+    background-color: transparent;
+}
+
+.path-local-levitate .dataTables_wrapper .dataTables_filter input {
+    background-color: white;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 10px 0px rgba(81, 45, 168, 0.01);
+    border: 0;
+}
+
+.path-local-levitate #datatable th:first-child,
+#datatable th:last-child {
+    pointer-events: none;
+    font-size: 0;
+}
+
+.path-local-levitate #datatable th:last-child {
+    pointer-events: none;
+    font-size: 0;
+}
+
+.path-local-levitate table.dataTable thead > tr > th.sorting:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting:after,
+.path-local-levitate table.dataTable thead > tr > th.sorting_asc:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting_asc:after,
+.path-local-levitate table.dataTable thead > tr > th.sorting_desc:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting_desc:after,
+.path-local-levitate table.dataTable thead > tr > th.sorting_asc_disabled:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting_asc_disabled:after,
+.path-local-levitate table.dataTable thead > tr > th.sorting_desc_disabled:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting_desc_disabled:after,
+.path-local-levitate table.dataTable thead > tr > td.sorting:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting:after,
+.path-local-levitate table.dataTable thead > tr > td.sorting_asc:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting_asc:after,
+.path-local-levitate table.dataTable thead > tr > td.sorting_desc:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting_desc:after,
+.path-local-levitate table.dataTable thead > tr > td.sorting_asc_disabled:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting_asc_disabled:after,
+.path-local-levitate table.dataTable thead > tr > td.sorting_desc_disabled:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting_desc_disabled:after {
+    font-size: .8em;
+}
+
+.path-local-levitate table.dataTable thead > tr > th.sorting:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting_asc:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting_desc:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting_asc_disabled:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting_desc_disabled:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting_asc:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting_desc:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting_asc_disabled:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting_desc_disabled:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting:after,
+.path-local-levitate table.dataTable thead > tr > th.sorting_asc:after,
+.path-local-levitate table.dataTable thead > tr > th.sorting_desc:after,
+.path-local-levitate table.dataTable thead > tr > th.sorting_asc_disabled:after,
+.path-local-levitate table.dataTable thead > tr > th.sorting_desc_disabled:after,
+.path-local-levitate table.dataTable thead > tr > td.sorting:after,
+.path-local-levitate table.dataTable thead > tr > td.sorting_asc:after,
+.path-local-levitate table.dataTable thead > tr > td.sorting_desc:after,
+.path-local-levitate table.dataTable thead > tr > td.sorting_asc_disabled:after,
+.path-local-levitate table.dataTable thead > tr > td.sorting_desc_disabled:after {
+    color: #231f20;
+    opacity: 0.3;
+    margin: 1px 0;
+}
+
+.path-local-levitate table.dataTable thead > tr > th.sorting:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting_asc:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting_desc:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting_asc_disabled:before,
+.path-local-levitate table.dataTable thead > tr > th.sorting_desc_disabled:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting_asc:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting_desc:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting_asc_disabled:before,
+.path-local-levitate table.dataTable thead > tr > td.sorting_desc_disabled:before {
+    bottom: 50%;
+    content: "▲"/"";
+}
+
+.path-local-levitate .dataTables_length,
+.dataTables_info {
+    display: none;
+}
+
+.path-local-levitate #datatable_filter {
+    margin: 10px 0 0 0;
+}
+
+.path-local-levitate #datatable .sorting {
+    background: none;
+}
+
+.path-local-levitate .dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 6px 14px;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none !important; /* stylelint-disable-line declaration-no-important */
+    cursor: pointer;
+    color: inherit !important; /* stylelint-disable-line declaration-no-important */
+    border: 1px solid #4050e7;
+    background: white;
+    border-radius: 6px;
+    min-width: 1.5em;
+}
+
+.path-local-levitate .paginate_button.previous,
+.paginate_button.next {
+    background-image: url([[pix:local_levitate|pagenation-right]]) !important; /* stylelint-disable-line declaration-no-important */
+    background-position: center !important; /* stylelint-disable-line declaration-no-important */
+    border: 1px solid #4050e7 !important; /* stylelint-disable-line declaration-no-important */
+    color: #4050e7 !important; /* stylelint-disable-line declaration-no-important */
+    background-color: #fff !important; /* stylelint-disable-line declaration-no-important */
+    padding: 6px 17px !important; /* stylelint-disable-line declaration-no-important */
+    border-radius: 6px !important; /* stylelint-disable-line declaration-no-important */
+    text-indent: -1000px !important; /* stylelint-disable-line declaration-no-important */
+    overflow: hidden !important; /* stylelint-disable-line declaration-no-important */
+    background-repeat: no-repeat !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.path-local-levitate .paginate_button.previous {
+    background-image: url([[pix:local_levitate|pagenation-left]]) !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.path-local-levitate .paginate_button.previous.disabled,
+.paginate_button.next.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+.path-local-levitate .dataTables_wrapper .dataTables_paginate {
+    display: flex;
+    margin: 15px 0;
+}
+
+.path-local-levitate .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.path-local-levitate .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover,
+.path-local-levitate .dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.path-local-levitate .dataTables_wrapper .dataTables_paginate .paginate_button:active,
+.path-local-levitate .dataTables_wrapper .dataTables_paginate .paginate_button:active:hover {
+    border: 1px solid #4050e7;
+    color: #4050e7 !important; /* stylelint-disable-line declaration-no-important */
+    background: #fff;
+    padding: 6px 14px;
+    border-radius: 6px;
+}
+
+.path-local-levitate .course-statistics.popular-table svg {
+    direction: ltr;
+}
+
+@media screen and (max-width: 1280px) {
+    .path-local-levitate .dashboard {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+    }
+    .path-local-levitate .dashboard .main-region {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .path-local-levitate .right-region .blocks,
+    .path-local-levitate .right-region {
+        width: 100%;
+        padding: 25px;
+        min-width: 100%;
+    }
+    .path-local-levitate .right-region {
+        padding: 0;
+    }
+}
